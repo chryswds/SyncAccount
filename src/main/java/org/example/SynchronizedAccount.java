@@ -20,7 +20,7 @@ public class SynchronizedAccount {
         balance -= amount;
     }
 
-    public int getBalance() {
+    public synchronized int getBalance() {
         return balance;
     }
 
