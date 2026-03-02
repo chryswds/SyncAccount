@@ -20,6 +20,10 @@ public class SynchronizedAccount {
         balance -= amount;
     }
 
+    public synchronized void printFinalBalance(){
+        System.out.println("Final balance (All threads together) : " + getBalance());
+    }
+
     public synchronized int getBalance() {
         return balance;
     }

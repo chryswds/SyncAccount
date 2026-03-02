@@ -23,12 +23,13 @@ public class Main {
             threadList.add(t);
         }
 
+
         for (MyThread thread : threadList) {
-            System.out.println(thread.account.getBalance());
+            thread.join();
         }
 
-        System.out.println("Final balance (All threads together: " + account.getBalance());
 
+        account.printFinalBalance();
 
 
     }
