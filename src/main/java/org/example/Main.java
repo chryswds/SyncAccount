@@ -27,6 +27,8 @@ public class Main {
             System.out.println(thread.account.getBalance());
         }
 
+        System.out.println("Final balance (All threads together: " + account.getBalance());
+
 
 
     }
